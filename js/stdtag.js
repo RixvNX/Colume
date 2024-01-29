@@ -1,8 +1,8 @@
-var stdtags_v1 = ["colume", "colime", "space", "code", "box", "text", "codesign", "value"];
-var overwitre_v1 = ["button"];
+var stdtags_v1 = ["colume", "colime", "space", "code", "box", "text", "title", "value", "array"];
+var overwitre_v1 = ["button", "hr"];
 
 function checkCodeTitleAndValue() {
-  if (document.getElementsByTagName("title").length != document.getElementsByTagName("value").length) {
+  if (document.getElementsByTagName("title").length-1 != document.getElementsByTagName("value").length) {
     console.log("[From stdtag] Checker: Missing Code_Title or Code_Value? lenght of AssemblyCodeTag is OOD!");
   }
 }
@@ -22,7 +22,7 @@ for(var i=0; i<overwitre_v1.length; i++) {
 };
 
 // Script
-function Button_onClick(actions, args) {
+function Clicked(actions, args) {
   console.log(actions)
   if (actions == "$alert") {
     alert(args)
