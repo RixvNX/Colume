@@ -7,7 +7,7 @@ function STDTag(tagName, fn){
   }
   
   function columeHandler(element) {
-    element.innerHTML = 'colume-test';
+    console.log("Included Colume Tag: " + stdtags_v1[i] + "  ->  " + "Success");
   } 
 
 
@@ -15,3 +15,8 @@ function STDTag(tagName, fn){
 for(var i=0; i<stdtags_v1.length; i++) {
     STDTag(stdtags_v1[i], eval(stdtags_v1[i]+"Handler"));
 };
+
+// Script
+function Button_onClick(actions) {
+  console.log(actions)
+}
