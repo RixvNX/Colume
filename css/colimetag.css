@@ -1,0 +1,20 @@
+/* Colime is a part of Colume, it's used to set no margin and so on tags */
+
+colime {
+    width: auto;
+    height: auto;
+}
+
+.noMargin {
+    margin: auto auto;
+}
+.noMargin:hover {
+    margin: auto auto;
+}
+
+.noRadius {
+    border-radius: 0px;
+}
+.noRadius:hover {
+    border-radius: 0px;
+}
