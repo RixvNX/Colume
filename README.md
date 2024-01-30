@@ -1,6 +1,10 @@
 # Colume
 Some Html5 tags are beautified and Colume defines some new tags.
 
+## Colume Rander Surport
+if Html5 can use, also Colume can use, unless HTML 5 is disabled.
+but Colume need JavaScript surport, and CSS-3, SASS.
+
 ## New Tags?
 Below are the new tags that are currently defined in beta:
 NEW:
