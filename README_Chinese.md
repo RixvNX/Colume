@@ -7,27 +7,27 @@
 | 标签 | 描述 |
 |:----------|:----------|
 | colume | Colume的主标签,所有Colume标签都必须在Colume标签内才有效
-| space | Similar to Div in Html,Create it for use in the Box Tag selection box or other subtag.
-| code | The tag is used to display the code, but for some reason, the tag cannot be added at this time (No Language Title).
-| box | The tag used to install the tag may be invalid due to omissions.
-| text | Text tag, used to display text, the difference is that the color of the text will change under the different theme.
-| title | A definition tag used inside code, Define the code language for the code tag (Do not use it alone as it is unsightly and will trigger checker's warnings).
-| value | A definition tag used inside code, Define the code topic for the code tag (Do not use it alone as it is unsightly and will trigger checker's warnings).
-| array | To display the list of item tags, pending.
+| space | 与Html中的Div类似，创建它以用于Box标记选择框或其他子标签
+| code | 标记用于显示代码，但由于某种原因，此时无法添加标签 (无语言标题)
+| box | DESC_NULL (安装标签时使用的标签可能因遗漏而无效)
+| text | 文字标签，用来显示文字，不同的是文字的颜色会在不同的主题下发生变化。
+| title | 在代码内部使用的定义标记，为代码标记定义代码语言 (不要单独使用它，因为它不美观，并且会触发检查器的警告)。
+| value | 在代码内部使用的定义标记，为代码标记定义代码主体 (不要单独使用它，因为它不美观，并且会触发检查器的警告)。
+| array | 显示item标签标记列表.
 
 修改:
 | 标签 | 描述 |
 |:----------|:----------|
-| button | After beautifying the button, you can use the sttag.js action in onclick.
-| hr | The beautified dividing line will lengthen laterally when moved up.
+| button | 美化后的HTML按钮, 可以使用/js/sttag.js 的action.
+| hr | 美化后的分割线
 
-## what's stdtag?
-stdtag has stdtag.css and stdtag.js, which are stored in /css/stdtag.css and /js/stdtag.js respectively.
-Sttag. css is used to beautify the Colume Tag,Sttag.js is used to support some functions of Colume Tag.
+## 什么是stdtag?
+Stdtag有Stdtag .css和Stdtag .js，分别保存在/css/stdtag .css和/js/stdtag .js中。
+Sttag。css用于美化列标签，Sttag.js用于支持列标签的一些功能。
 
-## what about stdtag.js?
-Sttag.js has some functional support built in, The following are the available values for action in the Clicked function:
-| action | args | desc |
+## 关于stdtag.js?
+sttag.js有一些内置的功能支持,以下是在相关函数中可供操作的值:
+| 函数名(action) | 参数 | 描述 |
 |:----------|:----------|:----------|
-| $alert | Message[string] | A pop-up warning box displays the contents of the Message parameter |
-| ... | ...[...] | ...
+| Clicked($alert) | Message[string] | 弹出一个警告框,内容由Message参数提供 |
+| ...(...) | ...[...] | ...
