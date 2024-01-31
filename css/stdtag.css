@@ -71,7 +71,7 @@ colume space:hover {
     transition: all 0.2s linear 0.009s;
 }
 
-colume space code {
+colume code {
     display: inline-block;
     margin: 2px 2px 2px 2px;
     padding: 10px 15px 10px 15px;
@@ -86,7 +86,7 @@ colume space code {
     font-size: 15px;
     transition: all 0.2s linear 0.009s;
 }
-colume space code:hover {
+colume code:hover {
     display: inline-block;
     margin: 2px 2px 2px 2px;
     padding: 10px 15px 10px 15px;
@@ -102,7 +102,7 @@ colume space code:hover {
     transition: all 0.2s linear 0.009s;
 }
 
-colume space code title {
+colume code title {
     display: block;
     margin: 0px 2px 0px 2px;
     padding: 3px 15px 3px 15px;
@@ -119,7 +119,7 @@ colume space code title {
     font-size: 15px;
     transition: all 0.2s linear 0.009s;
 }
-colume space code title:hover {
+colume code title:hover {
     display: block;
     margin: 0px 2px 0px 2px;
     padding: 3px 15px 3px 15px;
@@ -136,7 +136,7 @@ colume space code title:hover {
     font-size: 15px;
     transition: all 0.2s linear 0.009s;
 }
-colume space code value {
+colume code value {
     display: block;
     margin: 0px 2px 2px 2px;
     padding: 10px 15px 10px 15px;
@@ -153,7 +153,7 @@ colume space code value {
     font-size: 15px;
     transition: all 0.2s linear 0.009s;
 }
-colume space code value:hover {
+colume code value:hover {
     display: block;
     margin: 0px 2px 2px 2px;
     padding: 10px 15px 10px 15px;
@@ -189,25 +189,122 @@ colume hr:hover {
 }
 
 colume array {
-    /* TODO: MAKE ARRAY */
+    display: block;
+    margin: 6px 2px 6px 2px;
+    padding: 10px 8px 10px 8px;
+    border: solid;
+    border-color: rgb(245, 245, 245);
+    border-width: 3px;
+    border-radius: 3px;
+    height: auto;
+    width: auto;
+    background-color: rgb(255, 255, 255);
+    color: #0d0d0d;
+    font-size: 15px;
+    transition: all 0.2s linear 0.009s;
+}
+colume array:hover {
+    display: block;
+    margin: 6px 2px 6px 2px;
+    padding: 10px 8px 10px 8px;
+    border: solid;
+    border-color: rgb(248, 248, 248);
+    border-width: 3px;
+    border-radius: 3px;
+    height: auto;
+    width: auto;
+    background-color: rgb(255, 255, 255);
+    color: #0d0d0d;
+    font-size: 15px;
+    transition: all 0.2s linear 0.009s;
+}
+
+colume array item {
+    display: flex;
+    flex-direction: column;
+    margin: 2px 2px 2px 2px;
+    padding: 15px 15px 15px 15px;
+    border: solid;
+    border-color: rgb(245, 245, 245);
+    border-width: 3px;
+    border-radius: 3px;
+    height: auto;
+    width: auto;
+    background-color: rgb(255, 255, 255);
+    color: #0d0d0d;
+    font-size: 15px;
+    transition: all 0.2s linear 0.009s;
+}
+colume array item:hover {
+    display: flex;
+    flex-direction: column;
+    margin: 2px 2px 2px 2px;
+    padding: 15px 15px 15px 15px;
+    border: solid;
+    border-color: rgb(230, 230, 230);
+    border-width: 3px;
+    border-radius: 3px;
+    height: auto;
+    width: auto;
+    background-color: rgb(241, 241, 241);
+    color: #0d0d0d;
+    font-size: 15px;
+    transition: all 0.2s linear 0.009s;
+}
+
+colume box {
+    display: flex;
+    flex-direction: row;
+    margin: auto auto;
+    padding: auto auto;
+    height: auto;
+    width: auto;
+    border: solid;
+    border-color: rgb(239, 239, 239);
+    border-width: 3px;
+    border-radius: 3px;
+    height: auto;
+    width: auto;
+    background-color: rgba(255, 255, 255, .6);
+    color: #000000;
+    font-size: 15px;
+    transition: all 0.2s linear 0.009s;
+}
+colume box:hover {
+    display: flex;
+    flex-direction: row;
+    margin: auto auto;
+    padding: auto auto;
+    height: auto;
+    width: auto;
+    border: solid;
+    border-color: rgb(244, 244, 244);
+    border-width: 3px;
+    border-radius: 3px;
+    height: auto;
+    width: auto;
+    background-color: rgba(255, 255, 255, .698);
+    color: #000000;
+    font-size: 15px;
+    transition: all 0.2s linear 0.009s;
 }
 
 /* Dark(Night) Mode Css */
 
-colume_dark {
+colume[dark="1"] {
     width: 100%;
     height: 100%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Lato, Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
     /* every colume tag must in the colume tag (Night MODE) */
 }
 
-colume_dark text {
+colume[dark="1"] text {
     color: #ffffff;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Lato, Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
     font-size: 14px;
 }
 
-colume_dark button {
+colume[dark="1"] button {
     display: inline-block;
     border: solid;
     border-width: 3px;
@@ -220,7 +317,7 @@ colume_dark button {
     font-size: 16px;
     transition: all 0.2s linear 0.009s;
 }
-colume_dark button:hover {
+colume[dark="1"] button:hover {
     display: inline-block;
     border: solid;
     border-width: 3px;
@@ -234,7 +331,7 @@ colume_dark button:hover {
     transition: all 0.2s linear 0.009s;
 }
 
-colume_dark space {
+colume[dark="1"] space {
     display: inline-block;
     margin: auto auto;
     padding: auto auto;
@@ -251,7 +348,7 @@ colume_dark space {
     font-size: 15px;
     transition: all 0.2s linear 0.009s;
 }
-colume_dark space:hover {
+colume[dark="1"] space:hover {
     display: inline-block;
     margin: auto auto;
     padding: auto auto;
@@ -269,7 +366,7 @@ colume_dark space:hover {
     transition: all 0.2s linear 0.009s;
 }
 
-colume_dark space code {
+colume[dark="1"] code {
     display: inline-block;
     margin: 2px 2px 2px 2px;
     padding: 10px 15px 10px 15px;
@@ -284,7 +381,7 @@ colume_dark space code {
     font-size: 15px;
     transition: all 0.2s linear 0.009s;
 }
-colume_dark space code:hover {
+colume[dark="1"] code:hover {
     display: inline-block;
     margin: 2px 2px 2px 2px;
     padding: 10px 15px 10px 15px;
@@ -300,7 +397,7 @@ colume_dark space code:hover {
     transition: all 0.2s linear 0.009s;
 }
 
-colume_dark space code title {
+colume[dark="1"] code title {
     display: block;
     margin: 0px 2px 0px 2px;
     padding: 3px 15px 3px 15px;
@@ -317,7 +414,7 @@ colume_dark space code title {
     font-size: 15px;
     transition: all 0.2s linear 0.009s;
 }
-colume_dark space code title:hover {
+colume[dark="1"] code title:hover {
     display: block;
     margin: 0px 2px 0px 2px;
     padding: 3px 15px 3px 15px;
@@ -334,7 +431,7 @@ colume_dark space code title:hover {
     font-size: 15px;
     transition: all 0.2s linear 0.009s;
 }
-colume_dark space code value {
+colume[dark="1"] code value {
     display: block;
     margin: 0px 2px 2px 2px;
     padding: 10px 15px 10px 15px;
@@ -351,7 +448,7 @@ colume_dark space code value {
     font-size: 15px;
     transition: all 0.2s linear 0.009s;
 }
-colume_dark space code value:hover {
+colume[dark="1"] code value:hover {
     display: block;
     margin: 0px 2px 2px 2px;
     padding: 10px 15px 10px 15px;
@@ -369,7 +466,7 @@ colume_dark space code value:hover {
     transition: all 0.2s linear 0.009s;
 }
 
-colume_dark hr {
+colume[dark="1"] hr {
     width: 90%;
     border: solid;
     border-radius: 100px;
@@ -378,11 +475,112 @@ colume_dark hr {
     transition: all 0.14s linear 0.004s;
 }
 
-colume_dark hr:hover {
+colume[dark="1"] hr:hover {
     width: 96%;
     border: solid;
     border-radius: 100px;
     border-width: 5px;
     border-color: #dcdcdc;
     transition: all 0.1s linear 0.004s;
+}
+
+colume[dark="1"] array {
+    display: block;
+    margin: 6px 2px 6px 2px;
+    padding: 10px 8px 10px 8px;
+    border: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 3px;
+    border-radius: 3px;
+    height: auto;
+    width: auto;
+    background-color: rgb(17, 17, 17);
+    color: #f9f9f9;
+    font-size: 15px;
+    transition: all 0.2s linear 0.009s;
+}
+colume[dark="1"] array:hover {
+    display: block;
+    margin: 6px 2px 6px 2px;
+    padding: 10px 8px 10px 8px;
+    border: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 3px;
+    border-radius: 3px;
+    height: auto;
+    width: auto;
+    background-color: rgb(13, 13, 13);
+    color: #ffffff;
+    font-size: 15px;
+    transition: all 0.2s linear 0.009s;
+}
+
+colume[dark="1"] array item {
+    display: flex;
+    flex-direction: column;
+    margin: 2px 2px 2px 2px;
+    padding: 15px 15px 15px 15px;
+    border: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 3px;
+    border-radius: 3px;
+    height: auto;
+    width: auto;
+    background-color: rgb(17, 17, 17);
+    color: #fdfdfd;
+    font-size: 15px;
+    transition: all 0.2s linear 0.009s;
+}
+colume[dark="1"] array item:hover {
+    display: flex;
+    flex-direction: column;
+    margin: 2px 2px 2px 2px;
+    padding: 15px 15px 15px 15px;
+    border: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 3px;
+    border-radius: 3px;
+    height: auto;
+    width: auto;
+    background-color: rgb(13, 13, 13);
+    color: #ffffff;
+    font-size: 15px;
+    transition: all 0.2s linear 0.009s;
+}
+
+colume[dark="1"] box {
+    display: flex;
+    flex-direction: row;
+    margin: auto auto;
+    padding: auto auto;
+    height: auto;
+    width: auto;
+    border: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 3px;
+    border-radius: 3px;
+    height: auto;
+    width: auto;
+    background-color: rgb(18, 18, 18);
+    color: #000000;
+    font-size: 15px;
+    transition: all 0.2s linear 0.009s;
+}
+colume[dark="1"] box:hover {
+    display: flex;
+    flex-direction: row;
+    margin: auto auto;
+    padding: auto auto;
+    height: auto;
+    width: auto;
+    border: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 3px;
+    border-radius: 3px;
+    height: auto;
+    width: auto;
+    background-color: rgb(18, 18, 18);
+    color: #000000;
+    font-size: 15px;
+    transition: all 0.2s linear 0.009s;
 }

@@ -1,4 +1,4 @@
-var stdtags_v1 = ["colume", "colime", "space", "code", "box", "text", "title", "value", "array"];
+var stdtags_v1 = ["colume", "colime", "space", "code", "box", "text", "title", "value", "array", "item"];
 var overwitre_v1 = ["button", "hr"];
 
 function checkCodeTitleAndValue() {
