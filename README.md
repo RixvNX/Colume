@@ -13,11 +13,12 @@ NEW:
 | colume | Colume's main tag, all tags modified by Colume must be used within this.
 | space | Similar to Div in Html,Create it for use in the Box Tag selection box or other subtag.
 | code | The tag is used to display the code, but for some reason, the tag cannot be added at this time (No Language Title).
-| box | The tag used to install the tag may be invalid due to omissions.
+| box | using flex to display items.
 | text | Text tag, used to display text, the difference is that the color of the text will change under the different theme.
 | title | A definition tag used inside code, Define the code language for the code tag (Do not use it alone as it is unsightly and will trigger checker's warnings).
 | value | A definition tag used inside code, Define the code topic for the code tag (Do not use it alone as it is unsightly and will trigger checker's warnings).
-| array | To display the list of item tags, pending.
+| array | To display the list of item tags.
+| item | must using on the array tag, it's used to display item in the array list.
 
 OVERWRITE:
 | tag | desc |
