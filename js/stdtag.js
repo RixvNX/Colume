@@ -7,6 +7,10 @@ function checkCodeTitleAndValue() {
   }
 }
 
+function init() {
+  document.getElementById("__Body__").setAttribute("theme", "0");
+}
+
 function STDTag(tagName){
     Array
       .from(document.getElementsByTagName(tagName));
@@ -23,9 +27,21 @@ for(var i=0; i<overwitre_v1.length; i++) {
 
 // Script
 function Clicked(actions, args) {
-  console.log(actions)
+  console.log("[From stdtag] (JS) Action: " + actions)
   if (actions == "$alert") {
     alert(args)
+  }
+}
+
+function setTheme(theme) {
+  console.log("[From stdtag] (JS) Change theme, to: " + theme);
+  if (theme == "dark") {
+    document.getElementById("__Body__").setAttribute("theme", "1");
+    document.getElementById("__Main__").setAttribute("dark", "1");
+  }
+  else if (theme == "light") {
+    document.getElementById("__Body__").setAttribute("theme", "0");
+    document.getElementById("__Main__").setAttribute("dark", "0");
   }
 }
 
