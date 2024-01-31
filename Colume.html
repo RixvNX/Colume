@@ -7,55 +7,60 @@
         <link href="css/colimetag.css" rel="stylesheet" />
         <script src="js/stdtag.js"></script>
     </head>
-    <body>
-        <colume>
-            <space>
-                <text>hello world</text>
-                <button onclick="Clicked('$alert','Test of Colume')">Buttons</button>
-            </space>
-            <space>
-                <code class="noMargin noRadius">Test 1</code><br/>
-                <code class="noMargin noRadius">Test 2</code><br/>
-                <code class="noMargin noRadius">Test 3</code><br/>
-                <code class="noMargin noRadius">Test 4</code><br/>
-            </space>
-            <space>
-                <code class="noMargin noRadius">
-                    <title>Test Language 1</title>
-                    <value>Hello world!</value>
-                </code>
-                <code class="noMargin noRadius">
-                    <title>Test Language 2</title>
-                    <value>Hello world!</value>
-                </code>
-                <code class="noMargin noRadius">
-                    <title>Test Language 3</title>
-                    <value>Hello world!</value>
-                </code>
-                <code class="noMargin noRadius">
-                    <title>Test Language 4</title>
-                    <value>Hello world!</value>
-                </code>
-            </space>
+    <body id="__Body__" onload="init()">
+        <colume id="__Main__">
             <box>
-                <code>Key 0</code>
-                <template>Test</template>
-                <array>
-                    <box>
+                <space>
+                    <array>
+                        <item><text>hello world</text></item>
+                        <item><button onclick="setTheme('dark')">Change Theme To Dark</button></item>
+                        <item><button onclick="setTheme('light')">Change Theme To Light</button></item>
+                    </array>
+                </space>
+                <space>
+                    <code class="noMargin noRadius">Test 1</code><br/>
+                    <code class="noMargin noRadius">Test 2</code><br/>
+                    <code class="noMargin noRadius">Test 3</code><br/>
+                    <code class="noMargin noRadius">Test 4</code><br/>
+                </space>
+                <space>
+                    <code class="noMargin noRadius">
+                        <title>Test Language 1</title>
+                        <value>Hello world!</value>
+                    </code>
+                    <code class="noMargin noRadius">
+                        <title>Test Language 2</title>
+                        <value>Hello world!</value>
+                    </code>
+                    <code class="noMargin noRadius">
+                        <title>Test Language 3</title>
+                        <value>Hello world!</value>
+                    </code>
+                    <code class="noMargin noRadius">
+                        <title>Test Language 4</title>
+                        <value>Hello world!</value>
+                    </code>
+                </space>
+                <box>
+                    <code>Key 0</code>
+                    <template>Test</template>
+                    <array>
+                        <box>
+                            <item>Key 1</item>
+                            <item>Key 2</item>
+                            <item>Key 3</item>
+                            <item>Key 4</item>
+                        </box>
+                    </array>
+                    <array>
                         <item>Key 1</item>
                         <item>Key 2</item>
                         <item>Key 3</item>
                         <item>Key 4</item>
-                    </box>
-                </array>
-                <array>
-                    <item>Key 1</item>
-                    <item>Key 2</item>
-                    <item>Key 3</item>
-                    <item>Key 4</item>
-                </array>
+                    </array>
+                </box>
+                <br/>
             </box>
-            <br/>
             <hr/>
         </colume>
     </body>
